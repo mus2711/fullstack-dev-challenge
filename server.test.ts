@@ -1,4 +1,4 @@
-import { app } from "./server";
+import app from "./server/server";
 import request from "supertest";
 
 describe("Endpoints", () => {
@@ -66,6 +66,9 @@ describe("Endpoints", () => {
               19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
               35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
             ],
+            investment: null,
+            ROI: null,
+            profit: null,
           },
         });
       });
@@ -73,7 +76,9 @@ describe("Endpoints", () => {
 
   it("GET /calculation should return values when query parameters provided", () => {
     return request(app)
-      .get("/calculation?initial=1000&monthlyDeposit=100&interestRate=3")
+      .get(
+        "/calculation?initial=1000&monthlyDeposit=100&interestRate=3&maxYears=49"
+      )
       .then((response) => {
         expect(response.statusCode).toBe(200);
         expect(response.body).toStrictEqual({
@@ -102,6 +107,9 @@ describe("Endpoints", () => {
               19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
               35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
             ],
+            investment: 59800,
+            ROI: 2.30755560558567,
+            profit: 78191.82521402306,
           },
         });
       });

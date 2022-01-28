@@ -19,6 +19,7 @@ type RequestParams = {
   initial: string;
   monthlyDeposit: string;
   interestRate: string;
+  maxYears: string;
 };
 
 type ResponseType = {
@@ -32,12 +33,13 @@ const calculationHandler = (
   const initial = parseFloat(req.query.initial);
   const monthlyDeposit = parseFloat(req.query.monthlyDeposit);
   const interestRate = parseFloat(req.query.interestRate) / 100;
+  const maxYears = parseFloat(req.query.maxYears);
 
   const data: Projection = { year: [], amount: [] };
 
   const monthlyInterestRate = interestRate / 12;
 
-  for (let year = 0; year < 50; year++) {
+  for (let year = 0; year <= maxYears; year++) {
     const months = year * 12;
     const yearAmount =
       (monthlyDeposit * (Math.pow(1 + monthlyInterestRate, months) - 1)) /
