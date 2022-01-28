@@ -4,10 +4,12 @@ Forked and Developed by `Mustafa Al Quraishi`
 
 ## App Planning and Development
 
-With this App I followed a the Single Reponsibility Principle by considering a component hierarchy of
+With this App I followed a the Single Reponsibility Principle by considering a component hierarchy of a cascading Calculator that has two toggle modes between Projection and Calculation modes.
 
-- App
-  -- Compound Calculator
+- ** Calculation Mode**
+  \_ `Input what you want to intially want to invest, how much you can invest per month and your annual interest compounded monthly, see how much you could potentially return on your investment.`
+- ** Projection Mode **
+  \_ `Input what you want to intially want to invest, how much you can invest per month and your annual interest compounded monthly, see how much you could potentially return on your investment.`
 
 ## The challenge
 
