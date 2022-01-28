@@ -2,8 +2,13 @@
 
 Forked and Developed by `Mustafa Al Quraishi`
 
-![]("https://github.com/mus2711/fullstack-dev-challenge/blob/master/screenshots/Screenshot%202022-01-28%20at%2011.30.24.png?raw=true")
-![]("https://github.com/mus2711/fullstack-dev-challenge/blob/master/screenshots/Screenshot%202022-01-28%20at%2011.30.34.png?raw=true")
+<p align="center">
+   <img height="400px" src="https://github.com/mus2711/fullstack-dev-challenge/blob/master/screenshots/Screenshot%202022-01-28%20at%2011.30.24.png">
+</p>
+
+<p align="center">
+    <img height="400px" src="https://github.com/mus2711/fullstack-dev-challenge/blob/master/screenshots/Screenshot%202022-01-28%20at%2011.30.34.png">
+</p>
 
 ## App Planning and Development
 
