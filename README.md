@@ -2,7 +2,8 @@
 
 Forked and Developed by `Mustafa Al Quraishi`
 
-!("./screenshots/Screenshot 2022-01-28 at 11.30.24")
+![]("./screenshots/Screenshot 2022-01-28 at 11.30.24")
+![]("./screenshots/Screenshot 2022-01-28 at 11.30.34")
 
 ## App Planning and Development
 
